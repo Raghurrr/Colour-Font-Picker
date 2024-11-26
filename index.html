@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color & Font Picker</title>
+    <style>
+        #fcolor{
+            height:150px;
+            width:550px;
+            border:1px solid;
+            
+           
+
+        }
+        #fstyle{
+            height:150px;
+            width:1050px;
+            border:1px solid;
+            
+        }
+
+        #main{
+            display: flex;
+        }
+
+        #fcolor{
+            flex:100%;
+        }
+
+       /* #fcolor{
+            height:150px;
+            width:600px;
+            border:1px solid;*/
+
+           /* margin-inline: 800px;>
+           }*/
+            
+            
+        
+        #text{
+            height:300px;
+            width:400px;
+            border:1px solid;
+            display: center;
+        }
+
+       
+
+
+
+
+
+
+       
+        #o1{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: red ;
+        }
+        #o2{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: blue ;
+        }
+        #o3{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: green ;
+        }
+        #o4{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: pink ;
+        }
+        #o5{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: brown ;
+        }
+        #o6{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background:orange  ;
+        }
+        #o7{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: white ;
+        }
+        #o8{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: gold ;
+        }
+        #o9{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: violet ;
+        }
+        #o10{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: cyan ;
+        }
+        #o11{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: purple ;
+        }
+        #o12{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: black ;
+        }
+        #o13{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: lightgreen ;
+        }
+
+
+
+
+
+
+
+
+        #B1{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: red ;
+        }
+        #B2{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: blue ;
+        }
+        #B3{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: green ;
+        }
+        #B4{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: pink ;
+        }
+        #B5{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: brown ;
+        }
+        #B6{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background:orange  ;
+        }
+        #B7{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: white ;
+        }
+        #B8{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: gold ;
+        }
+        #B9{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: violet ;
+        }
+        #B10{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: cyan ;
+        }
+
+        #B11{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: purple ;
+        }
+
+        #B12{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: black ;
+        }
+        
+        #B13{
+            height:50px;
+            width:50px;
+            border-radius: 50px;
+            background: lightgreen;
+        }
+        
+        
+
+
+
+        body
+        {
+            /*background-image: url('img/Wanted.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;    */   
+            background-color: antiquewhite;
+        }
+      
+    </style>
+
+    <script>
+
+    function RedText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="red";
+    }
+
+    function BlueText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="blue";
+    }
+
+    function GreenText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="green";
+    }
+
+    function PinkText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="pink";
+    }
+
+    function BrownText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="brown";
+    }
+
+    function OrangeText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="orange";
+    }
+
+    function WhiteText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="white";
+    }
+
+    function GoldText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="gold";
+    }
+
+    function VioletText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="violet";
+    }
+
+    function CyanText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="cyan";
+    }
+
+    function PurpleText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="purple";
+    }
+
+    function BlackText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="black";
+    }
+
+    function LightGreenText()
+    {
+        let c=document.getElementById("text");
+        c.style.color="lightgreen";
+    }
+
+
+
+    function RedB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="red";
+    }
+
+    function BlueB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="blue";
+    }
+
+    function GreenB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="green";
+    }
+
+    function PinkB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="pink";
+    }
+
+    function BrownB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="brown";
+    }
+
+    function OrangeB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="orange";
+    }
+
+    function WhiteB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="white";
+    }
+
+    function GoldB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="gold";
+    }
+
+    function VioletB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="violet";
+    }
+
+    function CyanB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="cyan";
+    }
+
+    function PurpleB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="purple";
+    }
+
+    function BlackB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="black";
+    }
+    function LightGreenB()
+    {
+        let c=document.getElementById("text");
+        c.style.background="lightgreen";
+    }
+
+
+
+
+
+
+
+
+    function Agency_FB()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Agency FB";
+    }
+
+    function ALGERIAN()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="ALGERIAN";
+
+    }
+
+    function Aptos()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Aptos";
+
+    }
+
+    function Aptos_Display()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Aptos Display";
+
+    }
+
+    function Arial()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Arial";
+
+    }
+
+    function Arial_Black()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Arial Black";
+
+    }
+
+    function Bahnschrift()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Bahnschrift";
+
+    }
+
+    function Cascadia_Mono()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Cascadia Mono";
+
+    }
+
+    function Century()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Century";
+
+    }
+
+    function CASTELLAR()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="CASTELLAR";
+
+    }
+
+    function Consolas()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Consolas";
+
+    }
+
+    function Chiller()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Chiller";
+
+    }
+
+    function Colonna_MT()
+    {
+        let c=document.getElementById("text");
+        c.style.fontFamily="Colonna MT";
+
+    }
+
+
+    </script>
+</head>
+<body>
+    
+    <h2 align="center" style="color:rgb(0, 98, 255)">Color and Font Picker</h2>
+ 
+        <div id="heading"  align="center">
+            <h1 id="text"  contenteditable="true" align:center;></h1><br><br>
+        </div>
+
+
+
+<div id="main">
+    <div id="fcolor">
+        <h3 align="center" style="color: blue;">Font Color</h3>
+    <button id="o1" onclick="RedText()"></button>
+    <button id="o2" onclick="BlueText()"></button>
+    <button id="o3" onclick="GreenText()"></button>
+    <button id="o4" onclick="PinkText()"></button>
+    <button id="o5" onclick="BrownText()"></button>
+    <button id="o6" onclick="OrangeText()"></button>
+    <button id="o7" onclick="WhiteText()"></button>
+    <button id="o8" onclick="GoldText()"></button>
+    <button id="o9" onclick="VioletText()"></button>
+    <button id="o10" onclick="CyanText()"></button>
+    <button id="o11" onclick="PurpleText()"></button>
+    <button id="o12" onclick="BlackText()"></button>
+    <button id="o13" onclick="LightGreenText()"></button>
+   </div> &nbsp;&nbsp;
+
+<div id="fcolor">
+<h3 align="center" style="color: blue;">Background Color</h3>
+<button id="B1" onclick="RedB()"</button>
+<button id="B2" onclick="BlueB()"></button>
+<button id="B3" onclick="GreenB()"></button>
+<button id="B4" onclick="PinkB()"></button>
+<button id="B5" onclick="BrownB()"></button>
+<button id="B6" onclick="OrangeB()"></button>
+<button id="B7" onclick="WhiteB()"></button>
+<button id="B8" onclick="GoldB()"></button>
+<button id="B9" onclick="VioletB()"></button>
+<button id="B10" onclick="CyanB()"></button>
+<button id="B11" onclick="PurpleB()"></button>
+<button id="B12" onclick="BlackB()"></button>
+<button id="B13" onclick="LightGreenB()"></button>
+
+</div>
+
+</div><br>
+
+
+<div id="fstyle">
+    <h3 align="center" style="color: blue;">Font Style</h3>
+    <button id="F1" onclick="Agency_FB()" style="color: white; background-color: blue;">Agency FB</button>
+    <button id="F2" onclick="ALGERIAN()"  style="color: white; background-color: blue;">ALGERIAN</button>
+    <button id="F3" onclick="Aptos()"  style="color: white; background-color: blue;">Aptos</button>
+    <button id="F4" onclick="Aptos_Display()"  style="color: white; background-color: blue;">Aptos Display</button>
+    <button id="F5" onclick="Arial()"  style="color: white; background-color: blue;">Arial</button>
+    <button id="F6" onclick="Arial_Black()"  style="color: white; background-color: blue;">Arial Black</button>
+    <button id="F7" onclick="Bahnschrift()"  style="color: white; background-color: blue;">Bahnschrift</button>
+    <button id="F8" onclick="Cascadia_Mono()"  style="color: white; background-color: blue;">Cascadia Mono</button>
+    <button id="F9" onclick="Century()"  style="color: white; background-color: blue;">Century</button>
+    <button id="F10" onclick="CASTELLAR()"  style="color: white; background-color: blue;">CASTELLAR</button>
+    <button id="F11" onclick="Consolas()"  style="color: white; background-color: blue;">Consolas</button>
+    <button id="F12" onclick="Chiller()"  style="color: white; background-color: blue;">Chiller</button>
+    <button id="F13" onclick="Colonna_MT()"  style="color: white; background-color: blue;">Colonna MT</button>
+    
+    </div>
+
+
+</body>
+</html>
